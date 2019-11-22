@@ -4,7 +4,7 @@
   background-color: #fbe3ca;
   width: 100%;
   height: 90px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   font-size: 0.9em;
   text-transform: uppercase;
@@ -35,6 +35,13 @@
 
 #bars i {
   background-color: #fbe3ca;
+  color: #f7c796;
+  transition: color 0.1s;
+}
+
+#bars i:hover {
+  background-color: #fbe3ca;
+  color: #e88e38;
 }
 
 /* navbar css */
@@ -140,24 +147,24 @@
 }
 /* collapse header */
 @media screen and (max-width: 599px) {
-  #header {
-    font-size: 0.85em;
-    height: 80px;
-  }
   #navbar li {
     float: none;
     width: 100%;
+    margin-top: 0px;
   }
   #navbar a {
     text-align: left;
     padding-left: 20px;
   }
   #navbar {
-    position: relative;
-    top: 80px;
+    position: absolute;
+    top: 72px;
     transform: translateY(0%);
-    margin-left: -75px;
+    margin-left: 0px;
     width: 100%;
     display: none;
+  }
+  #home {
+    display: block;
   }
 }

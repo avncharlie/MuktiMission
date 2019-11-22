@@ -1,5 +1,33 @@
+/* sensible defaults + set fonts */
 * {
     margin: 0;
     box-sizing: border-box;
     background-color: #fff9f5;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* keep footer at bottom and footer + header fixed size */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#body {
+  flex: 1 0 auto;
+}
+
+#header {
+  flex-shrink: 0;
+}
+
+#footer {
+  flex-shrink: 0;
 }
