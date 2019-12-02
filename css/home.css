@@ -271,3 +271,56 @@
     font-size: 1.30em;
   }
 }
+
+#panels-container {
+  text-align: center;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  #panels-container {
+    max-width: 1000px;
+  }
+}
+
+.panel {
+  display: inline-block;
+  padding: 5%;
+  padding-bottom: 0px;
+}
+
+.panel-heading {
+  font-family: 'Raleway', sans-serif;
+  color: #E88E36;
+  font-weight: 500;
+  font-size: 1.4em;
+  padding-top: 10px;
+}
+
+.panel-text {
+  padding-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 700px) {
+  .panel-heading {
+    font-size: 1.2em;
+  }
+  .panel-text {
+    font-size: 0.75em
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .panel {
+    display: block;
+    width: 85% !important;
+    float: none !important;
+    margin: auto;
+    padding-bottom: 10%;
+  }
+}
